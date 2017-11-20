@@ -1,7 +1,7 @@
 <?php
 
 // requiring database class because User is using it's methods and attributes
-require_once("database.php");
+require_once(LIB_PATH.DS."database.php");
 
 class User
 {
