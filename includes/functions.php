@@ -17,4 +17,16 @@ function redirect_to( $location = NULL )
   }
 }
 
+function output_message($message = "") 
+{
+  return !empty($message) ? "<p class=\"message\">{$message}</p>" : null;
+}
+
+function __autoload($class_name)
+{
+  $class_name = strtolower($class_name);
+  $path = "../includes/{$class_name}.php";
+  file_exists($path) ? require_once($path) : die("The file {$class_name}.php could not be found.");
+}
+
 ?>
