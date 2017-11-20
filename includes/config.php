@@ -14,4 +14,4 @@ defined("DB_PASS")   ? null : define("DB_PASS", "");
 //Define database name
 defined("DB_NAME")   ? null : define("DB_NAME", "c9");
 
-?>
+
