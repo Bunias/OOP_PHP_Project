@@ -63,6 +63,7 @@ else
           </tr>
         </table>
       </form>
+      
 <?php include_layout_template("admin_footer.php"); ?>
 
 <?php
