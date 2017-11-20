@@ -30,8 +30,8 @@ class DatabaseObject
 
   private static function instantiate($record)
   {
-    $class_name = get_called_class();
-    $object = new $class_name;
+
+    $object = new static;
 
     foreach ($record as $attribute => $value)
     {
